@@ -6,7 +6,7 @@ This is scratch app which wrap [pxt-ev3](https://github.com/microsoft/pxt-ev3) u
 
 ## Downloads
 
-Current version: 0.0.0.
+Current version: 1.4.36.
 
 <table class="is-fullwidth">
 </thead>
@@ -19,23 +19,23 @@ Current version: 0.0.0.
     </td>
     <td>
       <span>64-bit</span>
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-0.0.0_x64.exe">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-1.4.36_x64.exe">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-0.0.0_x64.msi">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-1.4.36_x64.msi">
         💿 MSI Installer
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-0.0.0_x64-setup.exe">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-1.4.36_x64-setup.exe">
         💿 NSIS Installer
       </a><br />
       <span>32-bit</span>
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-0.0.0_x86.exe">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-1.4.36_x86.exe">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-0.0.0_x86.msi">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-1.4.36_x86.msi">
         💿 MSI Installer
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-0.0.0_x86-setup.exe">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-windows-1.4.36_x86-setup.exe">
         💿 NSIS Installer
       </a><br />
       <span>
@@ -50,33 +50,33 @@ Current version: 0.0.0.
     </td>
     <td>
       <span>Intel Processor</span>
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-0.0.0_x64">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-1.4.36_x64">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-0.0.0_x64.dmg">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-1.4.36_x64.dmg">
         💿 DMG bundle
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-0.0.0_x64.app.zip">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-1.4.36_x64.app.zip">
         💿 APP bundle
       </a><br />
       <span>Apple M1 Processor</span>
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-0.0.0_aarch64">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-1.4.36_aarch64">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-0.0.0_aarch64.dmg">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-1.4.36_aarch64.dmg">
         💿 DMG bundle
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-0.0.0_aarch64.app.zip">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-1.4.36_aarch64.app.zip">
         💿 APP bundle
       </a><br />
       <span><a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary">Universal</a></span>
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-0.0.0_universal">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-1.4.36_universal">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-0.0.0_universal.dmg">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-1.4.36_universal.dmg">
         💿 DMG bundle
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-0.0.0_universal.app.zip">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-macos-1.4.36_universal.app.zip">
         💿 APP bundle
       </a><br />
       <span>
@@ -94,37 +94,37 @@ Current version: 0.0.0.
     </td>
     <td>
       <span>64-bit</span>
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-0.0.0_amd64">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-1.4.36_amd64">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-0.0.0_amd64.AppImage">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-1.4.36_amd64.AppImage">
         💿 AppImage bundle
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-0.0.0_amd64.deb">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-1.4.36_amd64.deb">
         💿 DEB bundle
       </a><br />
       <span>32-bit</span>
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-0.0.0_i386">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-1.4.36_i386">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-0.0.0_i386.AppImage">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-1.4.36_i386.AppImage">
         💿 AppImage bundle
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-0.0.0_i386.deb">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-1.4.36_i386.deb">
         💿 DEB bundle
       </a><br />
       <span>arm64</span>
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-0.0.0_arm64">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-1.4.36_arm64">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-0.0.0_arm64.deb">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-1.4.36_arm64.deb">
         💿 DEB bundle
       </a><br />
       <span>armv7</span>
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-0.0.0_armhf">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-1.4.36_armhf">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-0.0.0_armhf.deb">
+      <a href="https://github.com/liudonghua123/pxt-ev3-app/releases/latest/download/pxt-ev3-app-linux-1.4.36_armhf.deb">
         💿 DEB bundle
       </a><br />
       <span>
