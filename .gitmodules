@@ -1,0 +1,3 @@
+[submodule "pxt-ev3"]
+	path = pxt-ev3
+	url = https://github.com/microsoft/pxt-ev3.git
