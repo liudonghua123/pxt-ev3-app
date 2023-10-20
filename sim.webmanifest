@@ -1,0 +1,19 @@
+{
+    "lang": "en",
+    "dir": "ltr",
+    "name": "LEGO® MINDSTORMS® Education EV3",
+    "short_name": "lego",
+    "background_color": "#FAFAFA",
+    "icons": [
+        {
+            "src": "@cdnUrl@/blob/4800c370dcc589501253dbfe7027df3b9f3ca883/static/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "types": "image/png"
+        }
+    ],
+    "scope": "/",
+    "start_url": "/",
+    "display": "fullscreen",
+    "orientation": "any",
+    "theme_color": "#0089BF"
+}

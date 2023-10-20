@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor</title>
+	<meta name="Description" content="A Blocks / JavaScript code editor for the LEGO® MINDSTORMS® Education EV3." />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+<meta name="robots" content="noindex">
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor" />
+<meta name="twitter:description" content="A Blocks / JavaScript code editor for the LEGO® MINDSTORMS® Education EV3." />
+<meta name="twitter:image" content="/static/tutorials/make-an-animation/button-pressed.gif" />
+
+<meta property="og:title" content="LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A Blocks / JavaScript code editor for the LEGO® MINDSTORMS® Education EV3." />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/tutorials/make-an-animation/button-pressed.gif" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/android-chrome-192x192.png">
+<link rel="icon" type="image/png" href="docs/static/icons/android-chrome-192x192.png">
+<link rel="shortcut icon" href="docs/static/icons/android-chrome-192x192.png">
+<meta name="theme-color" content="#0089BF">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-ev3-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-ev3-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-ev3-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-ev3-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-ev3-app/docfiles/target.css" />
+
+<script src="/pxt-ev3-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-ev3-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-ev3-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-ev3-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-ev3-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+.ui.accent { color: #0089BF; }
+.ui.inverted.accent { background: #0089BF; }
+
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless lighttoc main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://makecode.mindstorms.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent lighttoc sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-ev3-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/troubleshoot.html" role="menuitem">Troubleshoot</a>
+
+
+    <a class="item " href="https://ev3manager.education.lego.com/" role="menuitem">EV3 Manager</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/bluetooth.html" role="menuitem">Bluetooth</a>
+
+
+    <a class="item " href="https://forum.makecode.com" role="menuitem">Forum</a>
+
+
+    <a class="item " href="https://www.lego.com/service/" role="menuitem">LEGO Support</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/fll.html" role="menuitem">FIRST LEGO League</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/brick.html">Brick</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/show-string.html" role="menuitem">show string</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/show-number.html" role="menuitem">show number</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/show-value.html" role="menuitem">show value</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/show-mood.html" role="menuitem">show mood</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/show-image.html" role="menuitem">show image</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/clear-screen.html" role="menuitem">clear screen</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/show-ports.html" role="menuitem">show ports</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/button/on-event.html" role="menuitem">on event</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/button/is-pressed.html" role="menuitem">is pressed</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/button/was-pressed.html" role="menuitem">was pressed</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/button/pause-until.html" role="menuitem">pause until</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/set-status-light.html" role="menuitem">set light</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/brick/battery-level.html" role="menuitem">battery level</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/motors.html">Motors</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/motor/run.html" role="menuitem">run</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/motor/stop.html" role="menuitem">stop</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/motor/reset.html" role="menuitem">reset</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/motor/set-brake.html" role="menuitem">set brake</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/motor/set-inverted.html" role="menuitem">set inverted</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/motor/set-regulated.html" role="menuitem">set regulated</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/synced/tank.html" role="menuitem">tank</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/synced/steer.html" role="menuitem">steer</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/motor/angle.html" role="menuitem">angle</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/motor/speed.html" role="menuitem">speed</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/motor/clear-counts.html" role="menuitem">clear counts</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/motors/stop-all.html" role="menuitem">stop all motors</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/sensors.html">Sensors</a>
+        </div>
+        <div class=" content">
+            
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/sensors/touch-sensor.html">Touch</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/touch-sensor/on-event.html" role="menuitem">on event</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/touch-sensor/pause-until.html" role="menuitem">pause until</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/touch-sensor/is-pressed.html" role="menuitem">is pressed</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/touch-sensor/was-pressed.html" role="menuitem">was pressed</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/sensors/gyro.html">Gyro</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/gyro/angle.html" role="menuitem">angle</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/gyro/rate.html" role="menuitem">rate</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/gyro/reset.html" role="menuitem">reset</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/sensors/ultrasonic.html">Ultrasonic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/ultrasonic/on-event.html" role="menuitem">on event</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/ultrasonic/distance.html" role="menuitem">distance</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/ultrasonic/pause-until.html" role="menuitem">pause until</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/sensors/infrared.html">Infrared</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/infrared/on-event.html" role="menuitem">on event</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/infrared/proximity.html" role="menuitem">distance</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/infrared/pause-until.html" role="menuitem">pause until</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/sensors/beacon.html">Infrared beacon</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/beacon/on-event.html" role="menuitem">on event</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/beacon/pause-until.html" role="menuitem">pause until</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/beacon/is-pressed.html" role="menuitem">is pressed</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/beacon/was-pressed.html" role="menuitem">was pressed</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/beacon/set-remote-channel.html" role="menuitem">set remote channel</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/sensors/color-sensor.html">Color</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/color-sensor/on-color-detected.html" role="menuitem">on color detected</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/color-sensor/pause-until-color-detected.html" role="menuitem">pause until color detected</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/color-sensor/on-light-detected.html" role="menuitem">on light detected</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/color-sensor/pause-until-light-detected.html" role="menuitem">pause until light condition detected</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/color-sensor/color.html" role="menuitem">color</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/sensors/color-sensor/ambient-light.html" role="menuitem">light</a>
+
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/music.html">Music</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/play-sound-effect.html" role="menuitem">play sound effect</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/play-sound-effect-until-done.html" role="menuitem">play sound effect until done</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/play-tone.html" role="menuitem">play tone</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/ring-tone.html" role="menuitem">ring tone</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/stop-all-sounds.html" role="menuitem">stop all sounds</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/rest.html" role="menuitem">rest</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/change-tempo-by.html" role="menuitem">change tempo by</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/set-tempo.html" role="menuitem">set tempo</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/note-frequency.html" role="menuitem">note frequency</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/beat.html" role="menuitem">beat</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/music/set-volume.html" role="menuitem">set volume</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/control.html">Control</a>
+        </div>
+        <div class=" content">
+            
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/control/timer.html">Timer</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/control/timer/seconds.html" role="menuitem">seconds</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/control/timer/millis.html" role="menuitem">millis</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/control/timer/reset.html" role="menuitem">reset</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/control/timer/pause-until.html" role="menuitem">pause until</a>
+
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/reference/console.html">Console</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/reference/console/log.html" role="menuitem">log</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/console/log-value.html" role="menuitem">log value</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/reference/console/send-to-screen.html" role="menuitem">send to screen</a>
+
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/types/function.html" role="menuitem">Function</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/getting-started.html">Getting Started</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/getting-started/try.html" role="menuitem">Try</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/getting-started/use.html" role="menuitem">Use</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/tutorials.html">Tutorials</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/wake-up.html" role="menuitem">Wake Up!</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/make-an-animation.html" role="menuitem">Make An Animation</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/what-animal-am-i.html" role="menuitem">What Animal Am I?</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/music-brick.html" role="menuitem">Music Brick</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/run-motors.html" role="menuitem">Run Motors</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/tank-zigzag.html" role="menuitem">Tank ZigZag</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/touch-to-run.html" role="menuitem">Touch to Run</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/touch-sensor-values.html" role="menuitem">Touch Sensor Values</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/what-color.html" role="menuitem">What Color?</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/line-following.html" role="menuitem">Line Following</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/redlight-greenlight.html" role="menuitem">Red Light, Green Light</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/reflected-light-measure.html" role="menuitem">Reflected Light Measure</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/reflected-light-calibration.html" role="menuitem">Reflected Light Calibration</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/object-near.html" role="menuitem">Object Near?</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/tutorials/security-alert.html" role="menuitem">Security Alert</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/coding.html">Coding</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/coding/autonomous-parking.html" role="menuitem">Autonomous Parking</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/coding/object-detection.html" role="menuitem">Object Detection</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/coding/line-detection.html" role="menuitem">Line Detection</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/design-engineering.html">Design Engineering</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/design-engineering/make-it-move.html" role="menuitem">Make It Move Without Wheels</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/design-engineering/make-it-smarter.html" role="menuitem">Make It Smarter and Faster</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/design-engineering/make-it-communicate.html" role="menuitem">Make a System that Communicates</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-ev3-app/docs/maker.html">Maker</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-ev3-app/docs/maker/sound-machine.html" role="menuitem">Make a Sound Machine</a>
+
+
+    <a class="item " href="/pxt-ev3-app/docs/maker/security-gadget.html" role="menuitem">Make a Security Gadget</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="make-a-custom-animation">Make a custom animation</h1><h2 id="introduction-">Introduction </h2><p>Create a custom animation for your EV3 Brick</p>
+<p><img class="ui image" src="/static/tutorials/make-an-animation/button-pressed.gif" alt="Button press on EV3 Brick" loading="lazy"></p>
+<h2 id="step-1">Step 1</h2><p>Open the <code>||brick:Brick||</code> Toolbox drawer. Drag out a <code>||brick:show string||</code> block onto the Workspace, and drop it into the <code>||loops:on Start||</code> block. You should hear and see the block click into place.</p>
+<pre><code class="lang-blocks">brick.showString(&quot;Hello world&quot;, 1) </code></pre>
+<h2 id="step-2">Step 2</h2><p>In the <code>||brick:show string||</code> block, type the text <code>&quot;Press my button&quot;</code> to replace <code>&quot;Hello world&quot;</code>. </p>
+<pre><code class="lang-blocks">brick.showString(&quot;Press my button!&quot;, 1) </code></pre>
+<h2 id="step-3">Step 3</h2><p>Open the <code>||brick:Brick||</code> Toolbox drawer. Drag out an <code>||brick:on button||</code> block onto anyplace in the Workspace.</p>
+<pre><code class="lang-blocks">brick.buttonEnter.onEvent(ButtonEvent.Pressed, function () { 
+     
+}) 
+brick.showString(&quot;Press my button!&quot;, 1) </code></pre>
+<h2 id="step-4">Step 4</h2><p>Open the <code>||brick:Brick||</code> Toolbox drawer. Drag out a <code>||brick:show image||</code> block onto the Workspace, and drop it into the <code>||brick:on button||</code> block.</p>
+<pre><code class="lang-blocks">brick.buttonEnter.onEvent(ButtonEvent.Pressed, function () { 
+    brick.showImage(images.expressionsBigSmile) 
+}) 
+brick.showString(&quot;Press my button!&quot;, 1) </code></pre>
+<h2 id="step-5">Step 5</h2><p>Try out your code in the EV3 Brick simulator!</p>
+<p>Press the <code>Enter</code> button and check that the image shows up as you expected.</p>
+<h2 id="step-6">Step 6</h2><p>Open the <code>||brick:Brick||</code> Toolbox drawer. Drag out a <code>||brick:set status light||</code> block onto the Workspace, and drop it into the <code>||brick:on button||</code> block after the <code>||brick:show image||</code> block.</p>
+<pre><code class="lang-blocks">brick.buttonEnter.onEvent(ButtonEvent.Pressed, function () { 
+    brick.showImage(images.expressionsBigSmile) 
+    brick.setStatusLight(StatusLight.Orange) 
+}) 
+brick.showString(&quot;Press my button!&quot;, 1) </code></pre>
+<h2 id="step-7">Step 7</h2><p>Plug your EV3 Brick into the computer with the USB cable, and click the <strong>Download</strong> button at the bottom of your screen. Follow the directions to save your program to the EV3 Brick.</p>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <!-- <a class="item" href="https://makecode.com/contact" target="_blank" rel="noopener">Contact Us</a> -->
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener"> Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <div class="item">© 2023 Microsoft</div>
+        </div>
+        <div class="ui container horizontal small divided link list">
+            <a class="ui centered item" href="https://makecode.com/" title="Microsoft MakeCode" target="_blank" rel="noopener">Powered by Microsoft MakeCode</a>
+        </div>
+        <div class="ui centered container small list">
+            <p class="item">LEGO, the LEGO logo, MINDSTORMS and the MINDSTORMS EV3 logo are trademarks and/ or copyrights of the LEGO Group. ©2018 The LEGO Group. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-ev3-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-ev3-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-ev3-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "ev3";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var userAgentRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (userAgentRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = userAgentRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-ev3-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,998 @@
+{
+    "accentColor": "#0089BF",
+    "logoWide": true,
+    "logoUrl": "https://education.lego.com/",
+    "logo": "docs/static/lego_education_logo.png",
+    "docsLogo": "docs/static/lego_education_logo.png",
+    "portraitLogo": "docs/static/lego_education_logo.png",
+    "cardLogo": "docs/static/icons/android-chrome-192x192.png",
+    "appLogo": "docs/static/icons/android-chrome-192x192.png",
+    "organization": "Microsoft MakeCode",
+    "organizationUrl": "https://makecode.com/org",
+    "organizationLogo": "docs/static/Microsoft-logo_rgb_c-gray-square.png",
+    "organizationWideLogo": "docs/static/Microsoft-logo_rgb_c-gray.png",
+    "homeUrl": "https://makecode.mindstorms.com/",
+    "embedUrl": "https://makecode.mindstorms.com/",
+    "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
+    "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
+    "githubUrl": "https://github.com/Microsoft/pxt-ev3",
+    "driveDisplayName": "EV3",
+    "boardName": "LEGO® MINDSTORMS® Education EV3",
+    "copyrightText": "LEGO, the LEGO logo, MINDSTORMS and the MINDSTORMS EV3 logo are trademarks and/ or copyrights of the LEGO Group. ©2018 The LEGO Group. All rights reserved.",
+    "crowdinProject": "makecode",
+    "selectLanguage": true,
+    "blocksCollapsing": true,
+    "highContrast": true,
+    "greenScreen": true,
+    "availableLocales": [
+        "en",
+        "de",
+        "ja",
+        "ru",
+        "zh-CN",
+        "fr"
+    ],
+    "lightToc": true,
+    "docMenu": [
+        {
+            "name": "Support",
+            "path": "https://forum.makecode.com/"
+        },
+        {
+            "name": "Troubleshoot",
+            "path": "https://makecode.mindstorms.com/troubleshoot"
+        },
+        {
+            "name": "Blocks",
+            "path": "/blocks"
+        },
+        {
+            "name": "JavaScript",
+            "path": "/javascript"
+        },
+        {
+            "name": "Reference",
+            "path": "/reference"
+        },
+        {
+            "name": "FIRST LEGO League",
+            "path": "/fll"
+        }
+    ],
+    "print": true,
+    "showHomeScreen": true,
+    "homeScreenHero": "docs/static/hero.png",
+    "invertedMenu": false,
+    "invertedMonaco": false,
+    "monacoToolbox": true,
+    "invertedToolbox": false,
+    "coloredToolbox": true,
+    "hasAudio": true,
+    "saveInMenu": true,
+    "usbHelp": [],
+    "extendEditor": true,
+    "extendFieldEditors": true,
+    "scriptManager": true,
+    "showProjectSettings": true,
+    "debugger": true,
+    "errorList": true,
+    "workspaceSearch": true,
+    "importExtensionFiles": true,
+    "allowPackageExtensions": true,
+    "addNewTypeScriptFile": true,
+    "experiments": [
+        "alwaysGithubItemBlocks",
+        "blocksErrorList"
+    ],
+    "blocklyOptions": {
+        "grid": {
+            "spacing": 40,
+            "length": 2,
+            "colour": "#ddd"
+        }
+    },
+    "blockColors": {
+        "loops": "#58AB41",
+        "logic": "#1E5AA8",
+        "math": "#7396C8",
+        "variables": "#B40000",
+        "text": "#FCAC00",
+        "advanced": "#969696",
+        "functions": "#19325A",
+        "arrays": "#901F76"
+    },
+    "blockIcons": {
+        "loops": "",
+        "logic": "",
+        "math": "",
+        "variables": "",
+        "text": "",
+        "functions": "",
+        "arrays": "",
+        "search": "",
+        "addpackage": "",
+        "advancedcollapsed": "",
+        "advancedexpanded": ""
+    },
+    "monacoColors": {
+        "editor.background": "#f9f9f9"
+    },
+    "fileNameExclusiveFilter": "[^a-zA-Z0-9]",
+    "qrCode": true,
+    "shareFinishedTutorials": true,
+    "nameProjectFirst": true,
+    "enableTrace": true,
+    "githubEditor": true,
+    "chooseLanguageRestrictionOnNewProject": true,
+    "openProjectNewTab": true,
+    "python": true,
+    "TOC": [
+        {
+            "name": "About",
+            "path": "/about",
+            "subitems": []
+        },
+        {
+            "name": "FAQ",
+            "path": "/faq",
+            "subitems": []
+        },
+        {
+            "name": "Projects",
+            "path": "/projects",
+            "subitems": []
+        },
+        {
+            "name": "GitHub",
+            "path": "/github",
+            "subitems": []
+        },
+        {
+            "name": "Troubleshoot",
+            "path": "/troubleshoot",
+            "subitems": []
+        },
+        {
+            "name": "EV3 Manager",
+            "path": "https://ev3manager.education.lego.com/",
+            "subitems": []
+        },
+        {
+            "name": "Bluetooth",
+            "path": "/bluetooth",
+            "subitems": []
+        },
+        {
+            "name": "Forum",
+            "path": "https://forum.makecode.com",
+            "subitems": []
+        },
+        {
+            "name": "LEGO Support",
+            "path": "https://www.lego.com/service/",
+            "subitems": []
+        },
+        {
+            "name": "FIRST LEGO League",
+            "path": "/fll",
+            "subitems": []
+        },
+        {
+            "name": "Reference",
+            "path": "/reference",
+            "subitems": [
+                {
+                    "name": "Brick",
+                    "path": "/reference/brick",
+                    "subitems": [
+                        {
+                            "name": "show string",
+                            "path": "/reference/brick/show-string",
+                            "subitems": []
+                        },
+                        {
+                            "name": "show number",
+                            "path": "/reference/brick/show-number",
+                            "subitems": []
+                        },
+                        {
+                            "name": "show value",
+                            "path": "/reference/brick/show-value",
+                            "subitems": []
+                        },
+                        {
+                            "name": "show mood",
+                            "path": "/reference/brick/show-mood",
+                            "subitems": []
+                        },
+                        {
+                            "name": "show image",
+                            "path": "/reference/brick/show-image",
+                            "subitems": []
+                        },
+                        {
+                            "name": "clear screen",
+                            "path": "/reference/brick/clear-screen",
+                            "subitems": []
+                        },
+                        {
+                            "name": "show ports",
+                            "path": "/reference/brick/show-ports",
+                            "subitems": []
+                        },
+                        {
+                            "name": "on event",
+                            "path": "/reference/brick/button/on-event",
+                            "subitems": []
+                        },
+                        {
+                            "name": "is pressed",
+                            "path": "/reference/brick/button/is-pressed",
+                            "subitems": []
+                        },
+                        {
+                            "name": "was pressed",
+                            "path": "/reference/brick/button/was-pressed",
+                            "subitems": []
+                        },
+                        {
+                            "name": "pause until",
+                            "path": "/reference/brick/button/pause-until",
+                            "subitems": []
+                        },
+                        {
+                            "name": "set light",
+                            "path": "/reference/brick/set-status-light",
+                            "subitems": []
+                        },
+                        {
+                            "name": "battery level",
+                            "path": "/reference/brick/battery-level",
+                            "subitems": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Motors",
+                    "path": "/reference/motors",
+                    "subitems": [
+                        {
+                            "name": "run",
+                            "path": "/reference/motors/motor/run",
+                            "subitems": []
+                        },
+                        {
+                            "name": "stop",
+                            "path": "/reference/motors/motor/stop",
+                            "subitems": []
+                        },
+                        {
+                            "name": "reset",
+                            "path": "/reference/motors/motor/reset",
+                            "subitems": []
+                        },
+                        {
+                            "name": "set brake",
+                            "path": "/reference/motors/motor/set-brake",
+                            "subitems": []
+                        },
+                        {
+                            "name": "set inverted",
+                            "path": "/reference/motors/motor/set-inverted",
+                            "subitems": []
+                        },
+                        {
+                            "name": "set regulated",
+                            "path": "/reference/motors/motor/set-regulated",
+                            "subitems": []
+                        },
+                        {
+                            "name": "tank",
+                            "path": "/reference/motors/synced/tank",
+                            "subitems": []
+                        },
+                        {
+                            "name": "steer",
+                            "path": "/reference/motors/synced/steer",
+                            "subitems": []
+                        },
+                        {
+                            "name": "angle",
+                            "path": "/reference/motors/motor/angle",
+                            "subitems": []
+                        },
+                        {
+                            "name": "speed",
+                            "path": "/reference/motors/motor/speed",
+                            "subitems": []
+                        },
+                        {
+                            "name": "clear counts",
+                            "path": "/reference/motors/motor/clear-counts",
+                            "subitems": []
+                        },
+                        {
+                            "name": "stop all motors",
+                            "path": "/reference/motors/stop-all",
+                            "subitems": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Sensors",
+                    "path": "/reference/sensors",
+                    "subitems": [
+                        {
+                            "name": "Touch",
+                            "path": "/reference/sensors/touch-sensor",
+                            "subitems": [
+                                {
+                                    "name": "on event",
+                                    "path": "/reference/sensors/touch-sensor/on-event",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "pause until",
+                                    "path": "/reference/sensors/touch-sensor/pause-until",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "is pressed",
+                                    "path": "/reference/sensors/touch-sensor/is-pressed",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "was pressed",
+                                    "path": "/reference/sensors/touch-sensor/was-pressed",
+                                    "subitems": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gyro",
+                            "path": "/reference/sensors/gyro",
+                            "subitems": [
+                                {
+                                    "name": "angle",
+                                    "path": "/reference/sensors/gyro/angle",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "rate",
+                                    "path": "/reference/sensors/gyro/rate",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "reset",
+                                    "path": "/reference/sensors/gyro/reset",
+                                    "subitems": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Ultrasonic",
+                            "path": "/reference/sensors/ultrasonic",
+                            "subitems": [
+                                {
+                                    "name": "on event",
+                                    "path": "/reference/sensors/ultrasonic/on-event",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "distance",
+                                    "path": "/reference/sensors/ultrasonic/distance",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "pause until",
+                                    "path": "/reference/sensors/ultrasonic/pause-until",
+                                    "subitems": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Infrared",
+                            "path": "/reference/sensors/infrared",
+                            "subitems": [
+                                {
+                                    "name": "on event",
+                                    "path": "/reference/sensors/infrared/on-event",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "distance",
+                                    "path": "/reference/sensors/infrared/proximity",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "pause until",
+                                    "path": "/reference/sensors/infrared/pause-until",
+                                    "subitems": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Infrared beacon",
+                            "path": "/reference/sensors/beacon",
+                            "subitems": [
+                                {
+                                    "name": "on event",
+                                    "path": "/reference/sensors/beacon/on-event",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "pause until",
+                                    "path": "/reference/sensors/beacon/pause-until",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "is pressed",
+                                    "path": "/reference/sensors/beacon/is-pressed",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "was pressed",
+                                    "path": "/reference/sensors/beacon/was-pressed",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "set remote channel",
+                                    "path": "/reference/sensors/beacon/set-remote-channel",
+                                    "subitems": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Color",
+                            "path": "/reference/sensors/color-sensor",
+                            "subitems": [
+                                {
+                                    "name": "on color detected",
+                                    "path": "/reference/sensors/color-sensor/on-color-detected",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "pause until color detected",
+                                    "path": "/reference/sensors/color-sensor/pause-until-color-detected",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "on light detected",
+                                    "path": "/reference/sensors/color-sensor/on-light-detected",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "pause until light condition detected",
+                                    "path": "/reference/sensors/color-sensor/pause-until-light-detected",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "color",
+                                    "path": "/reference/sensors/color-sensor/color",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "light",
+                                    "path": "/reference/sensors/color-sensor/ambient-light",
+                                    "subitems": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Music",
+                    "path": "/reference/music",
+                    "subitems": [
+                        {
+                            "name": "play sound effect",
+                            "path": "/reference/music/play-sound-effect",
+                            "subitems": []
+                        },
+                        {
+                            "name": "play sound effect until done",
+                            "path": "/reference/music/play-sound-effect-until-done",
+                            "subitems": []
+                        },
+                        {
+                            "name": "play tone",
+                            "path": "/reference/music/play-tone",
+                            "subitems": []
+                        },
+                        {
+                            "name": "ring tone",
+                            "path": "/reference/music/ring-tone",
+                            "subitems": []
+                        },
+                        {
+                            "name": "stop all sounds",
+                            "path": "/reference/music/stop-all-sounds",
+                            "subitems": []
+                        },
+                        {
+                            "name": "rest",
+                            "path": "/reference/music/rest",
+                            "subitems": []
+                        },
+                        {
+                            "name": "change tempo by",
+                            "path": "/reference/music/change-tempo-by",
+                            "subitems": []
+                        },
+                        {
+                            "name": "set tempo",
+                            "path": "/reference/music/set-tempo",
+                            "subitems": []
+                        },
+                        {
+                            "name": "note frequency",
+                            "path": "/reference/music/note-frequency",
+                            "subitems": []
+                        },
+                        {
+                            "name": "beat",
+                            "path": "/reference/music/beat",
+                            "subitems": []
+                        },
+                        {
+                            "name": "set volume",
+                            "path": "/reference/music/set-volume",
+                            "subitems": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Control",
+                    "path": "/reference/control",
+                    "subitems": [
+                        {
+                            "name": "Timer",
+                            "path": "/reference/control/timer",
+                            "subitems": [
+                                {
+                                    "name": "seconds",
+                                    "path": "/reference/control/timer/seconds",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "millis",
+                                    "path": "/reference/control/timer/millis",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "reset",
+                                    "path": "/reference/control/timer/reset",
+                                    "subitems": []
+                                },
+                                {
+                                    "name": "pause until",
+                                    "path": "/reference/control/timer/pause-until",
+                                    "subitems": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Console",
+                    "path": "/reference/console",
+                    "subitems": [
+                        {
+                            "name": "log",
+                            "path": "/reference/console/log",
+                            "subitems": []
+                        },
+                        {
+                            "name": "log value",
+                            "path": "/reference/console/log-value",
+                            "subitems": []
+                        },
+                        {
+                            "name": "send to screen",
+                            "path": "/reference/console/send-to-screen",
+                            "subitems": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blocks",
+            "path": "/blocks",
+            "subitems": [
+                {
+                    "name": "On Start",
+                    "path": "/blocks/on-start",
+                    "subitems": []
+                },
+                {
+                    "name": "Loops",
+                    "path": "/blocks/loops",
+                    "subitems": [
+                        {
+                            "name": "repeat",
+                            "path": "/blocks/loops/repeat",
+                            "subitems": []
+                        },
+                        {
+                            "name": "for",
+                            "path": "/blocks/loops/for",
+                            "subitems": []
+                        },
+                        {
+                            "name": "while",
+                            "path": "/blocks/loops/while",
+                            "subitems": []
+                        },
+                        {
+                            "name": "for of",
+                            "path": "/blocks/loops/for-of",
+                            "subitems": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Logic",
+                    "path": "/blocks/logic",
+                    "subitems": [
+                        {
+                            "name": "if",
+                            "path": "/blocks/logic/if",
+                            "subitems": []
+                        },
+                        {
+                            "name": "Boolean",
+                            "path": "/blocks/logic/boolean",
+                            "subitems": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Variables",
+                    "path": "/blocks/variables",
+                    "subitems": [
+                        {
+                            "name": "assign",
+                            "path": "/blocks/variables/assign",
+                            "subitems": []
+                        },
+                        {
+                            "name": "change var",
+                            "path": "/blocks/variables/change",
+                            "subitems": []
+                        },
+                        {
+                            "name": "var",
+                            "path": "/blocks/variables/var",
+                            "subitems": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Math",
+                    "path": "/blocks/math",
+                    "subitems": []
+                },
+                {
+                    "name": "JavaScript blocks",
+                    "path": "/blocks/javascript-blocks",
+                    "subitems": []
+                },
+                {
+                    "name": "Custom blocks",
+                    "path": "/blocks/custom",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Python",
+            "path": "/python",
+            "subitems": [
+                {
+                    "name": "Calling",
+                    "path": "/python/call",
+                    "subitems": []
+                },
+                {
+                    "name": "Sequencing",
+                    "path": "/python/sequence",
+                    "subitems": []
+                },
+                {
+                    "name": "Variables",
+                    "path": "/python/variables",
+                    "subitems": []
+                },
+                {
+                    "name": "Operators",
+                    "path": "/python/operators",
+                    "subitems": []
+                },
+                {
+                    "name": "Statements",
+                    "path": "/python/statements",
+                    "subitems": []
+                },
+                {
+                    "name": "Functions",
+                    "path": "/python/functions",
+                    "subitems": []
+                },
+                {
+                    "name": "Classes",
+                    "path": "/python/classes",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "JavaScript",
+            "path": "/javascript",
+            "subitems": [
+                {
+                    "name": "Calling",
+                    "path": "/javascript/call",
+                    "subitems": []
+                },
+                {
+                    "name": "Sequencing",
+                    "path": "/javascript/sequence",
+                    "subitems": []
+                },
+                {
+                    "name": "Variables",
+                    "path": "/javascript/variables",
+                    "subitems": []
+                },
+                {
+                    "name": "Operators",
+                    "path": "/javascript/operators",
+                    "subitems": []
+                },
+                {
+                    "name": "Statements",
+                    "path": "/javascript/statements",
+                    "subitems": []
+                },
+                {
+                    "name": "Functions",
+                    "path": "/javascript/functions",
+                    "subitems": []
+                },
+                {
+                    "name": "Types",
+                    "path": "/javascript/types",
+                    "subitems": []
+                },
+                {
+                    "name": "Classes",
+                    "path": "/javascript/classes",
+                    "subitems": []
+                },
+                {
+                    "name": "Interfaces",
+                    "path": "/javascript/interfaces",
+                    "subitems": []
+                },
+                {
+                    "name": "Generics",
+                    "path": "/javascript/generics",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Types",
+            "path": "/types",
+            "subitems": [
+                {
+                    "name": "Number",
+                    "path": "/types/number",
+                    "subitems": []
+                },
+                {
+                    "name": "String",
+                    "path": "/types/string",
+                    "subitems": []
+                },
+                {
+                    "name": "Boolean",
+                    "path": "/types/boolean",
+                    "subitems": []
+                },
+                {
+                    "name": "Array",
+                    "path": "/types/array",
+                    "subitems": []
+                },
+                {
+                    "name": "Function",
+                    "path": "/types/function",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Developers",
+            "path": "",
+            "subitems": [
+                {
+                    "name": "Command Line Interface",
+                    "path": "/cli",
+                    "subitems": []
+                },
+                {
+                    "name": "Visual Studio Code support",
+                    "path": "/code",
+                    "subitems": []
+                },
+                {
+                    "name": "Blocks Embed",
+                    "path": "/blocks-embed",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Getting Started",
+            "path": "/getting-started",
+            "subitems": [
+                {
+                    "name": "Try",
+                    "path": "/getting-started/try",
+                    "subitems": []
+                },
+                {
+                    "name": "Use",
+                    "path": "/getting-started/use",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Tutorials",
+            "path": "/tutorials",
+            "subitems": [
+                {
+                    "name": "Wake Up!",
+                    "path": "/tutorials/wake-up",
+                    "subitems": []
+                },
+                {
+                    "name": "Make An Animation",
+                    "path": "/tutorials/make-an-animation",
+                    "subitems": []
+                },
+                {
+                    "name": "What Animal Am I?",
+                    "path": "/tutorials/what-animal-am-i",
+                    "subitems": []
+                },
+                {
+                    "name": "Music Brick",
+                    "path": "/tutorials/music-brick",
+                    "subitems": []
+                },
+                {
+                    "name": "Run Motors",
+                    "path": "/tutorials/run-motors",
+                    "subitems": []
+                },
+                {
+                    "name": "Tank ZigZag",
+                    "path": "/tutorials/tank-zigzag",
+                    "subitems": []
+                },
+                {
+                    "name": "Touch to Run",
+                    "path": "/tutorials/touch-to-run",
+                    "subitems": []
+                },
+                {
+                    "name": "Touch Sensor Values",
+                    "path": "/tutorials/touch-sensor-values",
+                    "subitems": []
+                },
+                {
+                    "name": "What Color?",
+                    "path": "/tutorials/what-color",
+                    "subitems": []
+                },
+                {
+                    "name": "Line Following",
+                    "path": "/tutorials/line-following",
+                    "subitems": []
+                },
+                {
+                    "name": "Red Light, Green Light",
+                    "path": "/tutorials/redlight-greenlight",
+                    "subitems": []
+                },
+                {
+                    "name": "Reflected Light Measure",
+                    "path": "/tutorials/reflected-light-measure",
+                    "subitems": []
+                },
+                {
+                    "name": "Reflected Light Calibration",
+                    "path": "/tutorials/reflected-light-calibration",
+                    "subitems": []
+                },
+                {
+                    "name": "Object Near?",
+                    "path": "/tutorials/object-near",
+                    "subitems": []
+                },
+                {
+                    "name": "Security Alert",
+                    "path": "/tutorials/security-alert",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Coding",
+            "path": "/coding",
+            "subitems": [
+                {
+                    "name": "Autonomous Parking",
+                    "path": "/coding/autonomous-parking",
+                    "subitems": []
+                },
+                {
+                    "name": "Object Detection",
+                    "path": "/coding/object-detection",
+                    "subitems": []
+                },
+                {
+                    "name": "Line Detection",
+                    "path": "/coding/line-detection",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Design Engineering",
+            "path": "/design-engineering",
+            "subitems": [
+                {
+                    "name": "Make It Move Without Wheels",
+                    "path": "/design-engineering/make-it-move",
+                    "subitems": []
+                },
+                {
+                    "name": "Make It Smarter and Faster",
+                    "path": "/design-engineering/make-it-smarter",
+                    "subitems": []
+                },
+                {
+                    "name": "Make a System that Communicates",
+                    "path": "/design-engineering/make-it-communicate",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Maker",
+            "path": "/maker",
+            "subitems": [
+                {
+                    "name": "Make a Sound Machine",
+                    "path": "/maker/sound-machine",
+                    "subitems": []
+                },
+                {
+                    "name": "Make a Security Gadget",
+                    "path": "/maker/security-gadget",
+                    "subitems": []
+                }
+            ]
+        }
+    ],
+    "id": "ev3",
+    "title": "LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor",
+    "name": "LEGO® MINDSTORMS® Education EV3",
+    "description": "A Blocks / JavaScript code editor for the LEGO® MINDSTORMS® Education EV3.",
+    "htmlDocIncludes": {}
+}

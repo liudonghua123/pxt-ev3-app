@@ -1,0 +1,127 @@
+{
+    "id": "ev3",
+    "platformid": "linux",
+    "nickname": "lego",
+    "name": "LEGO® MINDSTORMS® Education EV3",
+    "title": "LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor",
+    "description": "A Blocks / JavaScript code editor for the LEGO® MINDSTORMS® Education EV3.",
+    "corepkg": "ev3",
+    "simulator": {
+        "autoRun": true,
+        "autoRunLight": false,
+        "aspectRatio": 0.5,
+        "parts": false,
+        "enableTrace": true,
+        "boardDefinition": {
+            "visual": "ev3"
+        }
+    },
+    "cloud": {
+        "workspace": false,
+        "packages": true,
+        "sharing": true,
+        "publishing": true,
+        "importing": true,
+        "preferredPackages": [],
+        "githubPackages": true,
+        "cloudProviders": {
+            "github": {}
+        }
+    },
+    "compile": {
+        "isNative": true,
+        "useUF2": true,
+        "useELF": true,
+        "hasHex": true,
+        "deployDrives": "EV3",
+        "deployFileMarker": "INFO_UF2.TXT",
+        "driveName": "EV3",
+        "flashCodeAlign": 256,
+        "floatingPoint": true,
+        "taggedInts": true,
+        "stackAlign": 2,
+        "gc": true,
+        "nativeType": "thumb",
+        "switches": {},
+        "jsRefCounting": false,
+        "utf8": true
+    },
+    "serial": {
+        "vendorId": "0x0694",
+        "productId": "0x0005",
+        "rawHID": true,
+        "useEditor": true,
+        "log": true
+    },
+    "runtime": {
+        "mathBlocks": true,
+        "loopsBlocks": true,
+        "logicBlocks": true,
+        "variablesBlocks": true,
+        "textBlocks": true,
+        "listsBlocks": true,
+        "functionBlocks": true,
+        "onStartNamespace": "loops",
+        "onStartWeight": 100,
+        "onStartColor": "#58AB41",
+        "pauseUntilBlock": {
+            "category": "loops"
+        },
+        "breakBlock": true,
+        "continueBlock": true,
+        "bannedCategories": []
+    },
+    "compileService": {
+        "buildEngine": "dockermake",
+        "dockerImage": "pext/ev3:zlib",
+        "serviceId": "ev3"
+    },
+    "ignoreDocsErrors": true,
+    "uploadDocs": true,
+    "versions": {
+        "branch": "main",
+        "commits": "https://github.com/liudonghua123/pxt-ev3-app/commits/fdc4bb8c2c1a97e5f00e73b69a93a1a2f127bcbe",
+        "target": "1.4.36",
+        "pxt": "9.1.10"
+    },
+    "blocksprj": {
+        "id": "blocksprj",
+        "config": {
+            "name": "{0}",
+            "dependencies": {
+                "ev3": "*"
+            },
+            "description": "",
+            "files": [
+                "main.blocks",
+                "main.ts",
+                "README.md"
+            ],
+            "additionalFilePaths": []
+        },
+        "files": {
+            "README.md": "",
+            "main.blocks": "<xml xmlns=\"http://www.w3.org/1999/xhtml\">\n  <variables></variables>\n  <block type=\"pxt-on-start\" x=\"0\" y=\"0\"></block>\n  <block type=\"forever\" x=\"176\" y=\"0\"></block>\n</xml>",
+            "main.ts": "\n"
+        }
+    },
+    "tsprj": {
+        "id": "tsprj",
+        "config": {
+            "name": "{0}",
+            "dependencies": {
+                "ev3": "*"
+            },
+            "description": "",
+            "files": [
+                "main.ts",
+                "README.md"
+            ],
+            "additionalFilePaths": []
+        },
+        "files": {
+            "README.md": "",
+            "main.ts": "\n"
+        }
+    }
+}

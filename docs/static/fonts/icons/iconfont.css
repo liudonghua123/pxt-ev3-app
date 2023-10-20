@@ -1,0 +1,96 @@
+@font-face {
+	font-family: "iconfont";
+	src: url("iconfont.eot?92b07c6c5392088e45983d845234d068?#iefix") format("embedded-opentype"),
+url("iconfont.woff2?92b07c6c5392088e45983d845234d068") format("woff2"),
+url("iconfont.woff?92b07c6c5392088e45983d845234d068") format("woff");
+}
+
+.icon {
+	line-height: 1;
+}
+
+.icon:before {
+	font-family: iconfont !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.icon-ultrasonic:before {
+	content: "\f101";
+}
+.icon-color:before {
+	content: "\f102";
+}
+.icon-touch:before {
+	content: "\f103";
+}
+.icon-gyro:before {
+	content: "\f104";
+}
+.icon-addpackage:before {
+	content: "\f105";
+}
+.icon-brick:before {
+	content: "\f106";
+}
+.icon-controls:before {
+	content: "\f107";
+}
+.icon-functions:before {
+	content: "\f108";
+}
+.icon-list:before {
+	content: "\f109";
+}
+.icon-logic:before {
+	content: "\f10a";
+}
+.icon-loops:before {
+	content: "\f10b";
+}
+.icon-math:before {
+	content: "\f10c";
+}
+.icon-motors:before {
+	content: "\f10d";
+}
+.icon-music:before {
+	content: "\f10e";
+}
+.icon-sensors:before {
+	content: "\f10f";
+}
+.icon-text:before {
+	content: "\f110";
+}
+.icon-variables:before {
+	content: "\f111";
+}
+.icon-console:before {
+	content: "\f112";
+}
+.icon-advancedcollapsed:before {
+	content: "\f113";
+}
+.icon-advancedexpanded:before {
+	content: "\f114";
+}
+.icon-cancel:before {
+	content: "\f115";
+}
+.icon-check:before {
+	content: "\f116";
+}
+.icon-download:before {
+	content: "\f117";
+}
+.icon-save:before {
+	content: "\f118";
+}
+.icon-blocks:before {
+	content: "\f119";
+}
+.icon-search:before {
+	content: "\f11a";
+}

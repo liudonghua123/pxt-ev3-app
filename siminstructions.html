@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" data-framework="typescript">
+
+<head>
+    <meta charset="utf-8">
+    <title>Make Instructions</title>
+    <style type="text/css">
+        @import "/pxt-ev3-app/semantic.css";
+    </style>
+    <style>
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            position: relative;
+            width: 100%;
+            height: 100%;            
+            padding: 0;
+            margin: 0;
+            font-family: "Lucida Console", Monaco, monospace;
+        }
+
+        div {
+            /*undo semantic UI*/
+            box-sizing: content-box;
+            line-height: normal;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .organization {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            height: 4rem;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: normal;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            display: block;
+            text-align: center;
+        }
+
+        #front-panel .board-svg {
+            position: absolute;
+            left: 2rem;
+            width: 300px;
+            top: 16rem;
+        }
+
+        #proj-title {
+            width: 100%;
+            font-size: 55px;
+            margin-top: 20px;
+        }
+
+        #proj-code {
+            width: 300px;
+            height: 400px;
+            position: absolute;
+            right: 2rem;
+            top: 16rem;
+        }
+
+        #proj-code-container {
+            width: 100%;
+            height: 100%;
+            font-size: 4px;
+            overflow: hidden;
+            display: none;
+        }
+
+        #proj-code-spinner {
+            width: 100%;
+        }
+
+        .back-panel svg {
+            position: relative;
+            margin: 0 auto;
+            left: inherit;
+            bottom: -7px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // This line gets patched up by the cloud
+        var pxtConfig = {
+    "relprefix": "/pxt-ev3-app/",
+    "verprefix": "",
+    "workerjs": "/pxt-ev3-app/worker.js",
+    "monacoworkerjs": "/pxt-ev3-app/monacoworker.js",
+    "gifworkerjs": "/pxt-ev3-app/gifjs/gif.worker.js",
+    "serviceworkerjs": "/pxt-ev3-app/serviceworker.js",
+    "typeScriptWorkerJs": "/pxt-ev3-app/tsworker.js",
+    "pxtVersion": "9.1.10",
+    "pxtRelId": "localDirRelId",
+    "pxtCdnUrl": "/pxt-ev3-app/",
+    "commitCdnUrl": "/pxt-ev3-app/",
+    "blobCdnUrl": "/pxt-ev3-app/",
+    "cdnUrl": "/pxt-ev3-app/",
+    "targetVersion": "0.0.0",
+    "targetRelId": "",
+    "targetUrl": "",
+    "targetId": "ev3",
+    "simUrl": "/pxt-ev3-app/simulator.html",
+    "simserviceworkerUrl": "/pxt-ev3-app/simulatorserviceworker.js",
+    "simworkerconfigUrl": "/pxt-ev3-app/workerConfig.js",
+    "partsUrl": "/pxt-ev3-app/siminstructions.html",
+    "runUrl": "/pxt-ev3-app/run.html",
+    "docsUrl": "/pxt-ev3-app/docs.html",
+    "multiUrl": "/pxt-ev3-app/multi.html",
+    "asseteditorUrl": "/pxt-ev3-app/asseteditor.html",
+    "skillmapUrl": "/pxt-ev3-app/skillmap.html",
+    "authcodeUrl": "/pxt-ev3-app/authcode.html",
+    "multiplayerUrl": "/pxt-ev3-app/multiplayer.html",
+    "kioskUrl": "/pxt-ev3-app/kiosk.html",
+    "isStatic": true
+};
+    </script>
+    <script src="/pxt-ev3-app/pxtsim.js"></script>
+    <script src="/pxt-ev3-app/common-sim.js"></script>
+    <script src="/pxt-ev3-app/sim.js"></script>
+
+    <div id="front-panel" class="instr-panel">
+        <h1 id="proj-title"></h1>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" manifest="/pxt-ev3-app/release.manifest" data-framework="typescript">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <script type="text/javascript">
+    if(/[&?]translate=1/.test(window.location.href)) {
+		var _jipt = [];
+        _jipt.push(['project', 'makecode']);
+        _jipt.push(['escape', function() {
+            window.location.href = window.location.href.replace(/[$\?]translate=1/, '');
+        }]);
+        _jipt.push(['before_dom_insert', function(text, node, attribute) {
+            if (text)
+                text = text.replace(/^\{(id|loc):[^\}]+\}/g, '');
+            return text;
+        }]);
+        // inject crowdin
+        (function _() {
+            var s = document.createElement("script");
+            s.setAttribute("type", "text/javascript");
+            s.setAttribute("src", "//cdn.crowdin.com/jipt/jipt.js");
+            document.head.insertBefore(s, document.head.firstElementChild);
+        })();
+    }
+	</script>
+
+    
+<!-- include appmeta.html -->
+
+<!-- include robotsmeta.html -->
+<meta name="robots" content="noindex">
+<!-- end include robotsmeta.html -->
+
+<title>LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor</title>
+<meta name="description" content="A Blocks / JavaScript code editor for the LEGO® MINDSTORMS® Education EV3." />
+<link rel="manifest" href="/pxt-ev3-app/sim.webmanifest">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent-black">
+<meta name="format-detection" content="telephone=no">
+<meta name="application-name" content="LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor">
+
+<meta name="msapplication-TileColor" content="#0089BF">
+<meta name="msapplication-TileImage" content="@cdnUrl@/blob/4800c370dcc589501253dbfe7027df3b9f3ca883/static/icons/android-chrome-192x192.png">
+<meta name="msapplication-config" content="none"/>
+<meta name="theme-color" content="#0089BF">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:title" content="LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor" />
+<meta name="twitter:description" content="A Blocks / JavaScript code editor for the LEGO® MINDSTORMS® Education EV3." />
+<meta name="twitter:image" content="@cdnUrl@/blob/4800c370dcc589501253dbfe7027df3b9f3ca883/static/icons/android-chrome-192x192.png" />
+
+<meta property="og:title" content="LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor" />
+<meta property="og:site_name" content="LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor" />
+<meta property="og:description" content="A Blocks / JavaScript code editor for the LEGO® MINDSTORMS® Education EV3." />
+<meta property="og:image" content="@cdnUrl@/blob/4800c370dcc589501253dbfe7027df3b9f3ca883/static/icons/android-chrome-192x192.png" />
+
+<link rel="apple-touch-icon" href="@cdnUrl@/blob/4800c370dcc589501253dbfe7027df3b9f3ca883/static/icons/android-chrome-192x192.png">
+<link rel="icon" type="image/png" href="@cdnUrl@/blob/4800c370dcc589501253dbfe7027df3b9f3ca883/static/icons/android-chrome-192x192.png">
+<link rel="shortcut icon" href="@cdnUrl@/blob/4800c370dcc589501253dbfe7027df3b9f3ca883/static/icons/android-chrome-192x192.png">
+
+<!-- end include appmeta.html -->
+
+
+    <link rel="stylesheet" data-rtl="/pxt-ev3-app/rtlsemantic.css" href="/pxt-ev3-app/semantic.css" type="text/css">
+</head>
+
+<body class="main">
+    <div id='loading' class="ui active dimmer">
+        <div class="ui large main loader msft"></div>
+    </div>
+
+    <div id='custom-content'>
+    </div>
+    <div id='blocks-editor-field-div'>
+    </div>
+
+    <div id="allcontent">
+        <div id="editorcontent">
+            <div id='content' class="ui dimmable full-abs">
+            </div>
+        </div>
+    </div>
+
+    <div id='msg' aria-live="polite">
+        <div id='errmsg' class="ui red inverted segment"></div>
+        <div id='warnmsg' class="ui orange inverted segment"></div>
+        <div id='infomsg' class="ui teal inverted segment"></div>
+        <div id='compilemsg' class="ui ignored info message"></div>
+    </div>
+
+    <script>
+        // This line gets patched up by the cloud
+        var pxtConfig = {
+    "relprefix": "/pxt-ev3-app/",
+    "verprefix": "",
+    "workerjs": "/pxt-ev3-app/worker.js",
+    "monacoworkerjs": "/pxt-ev3-app/monacoworker.js",
+    "gifworkerjs": "/pxt-ev3-app/gifjs/gif.worker.js",
+    "serviceworkerjs": "/pxt-ev3-app/serviceworker.js",
+    "typeScriptWorkerJs": "/pxt-ev3-app/tsworker.js",
+    "pxtVersion": "9.1.10",
+    "pxtRelId": "localDirRelId",
+    "pxtCdnUrl": "/pxt-ev3-app/",
+    "commitCdnUrl": "/pxt-ev3-app/",
+    "blobCdnUrl": "/pxt-ev3-app/",
+    "cdnUrl": "/pxt-ev3-app/",
+    "targetVersion": "0.0.0",
+    "targetRelId": "",
+    "targetUrl": "",
+    "targetId": "ev3",
+    "simUrl": "/pxt-ev3-app/simulator.html",
+    "simserviceworkerUrl": "/pxt-ev3-app/simulatorserviceworker.js",
+    "simworkerconfigUrl": "/pxt-ev3-app/workerConfig.js",
+    "partsUrl": "/pxt-ev3-app/siminstructions.html",
+    "runUrl": "/pxt-ev3-app/run.html",
+    "docsUrl": "/pxt-ev3-app/docs.html",
+    "multiUrl": "/pxt-ev3-app/multi.html",
+    "asseteditorUrl": "/pxt-ev3-app/asseteditor.html",
+    "skillmapUrl": "/pxt-ev3-app/skillmap.html",
+    "authcodeUrl": "/pxt-ev3-app/authcode.html",
+    "multiplayerUrl": "/pxt-ev3-app/multiplayer.html",
+    "kioskUrl": "/pxt-ev3-app/kiosk.html",
+    "isStatic": true
+};
+    </script>
+    
+<!-- include apptrackingweb.html -->
+<script type="text/javascript" src="/pxt-ev3-app/pxtweb.js"></script>
+<!-- end include apptrackingweb.html -->
+
+    
+<!-- include apptracking.html -->
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie, telemetryInitializer) {
+        //Backend will patch / + blb + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/$/.test("/pxt-ev3-app/"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(telemetryInitializer);
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-ev3-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+<!-- end include apptracking.html -->
+
+    <script type="text/javascript" src="/pxt-ev3-app/pxtapp.js"></script>
+    <script type="text/javascript" src="/pxt-ev3-app/target.js"></script>
+    <script id="mainscript" type="text/javascript" src="/pxt-ev3-app/main.js"></script>
+    <xml id="blocklyToolboxDefinitionCategory" style="display: none">
+        <!-- An empty category is required so that Blockly launches in category mode -->
+        <category name="">
+        </category>
+    </xml>
+    <xml id="blocklyToolboxDefinitionFlyout" style="display: none">
+    </xml>
+    <script>
+        // Before loading vs/editor/editor.main, define a global MonacoEnvironment that overwrites
+        // the default worker url location (used when creating WebWorkers). The problem here is that
+        // HTML5 does not (yet) allow cross-domain web workers, so we need to proxy the instantion of
+        // a web worker through a same-domain script
+        window.MonacoEnvironment = {
+            getWorkerUrl: function(workerId, label) {
+                return pxt.webConfig.monacoworkerjs;
+            }
+        };
+
+        // this get rewritten to blob URLs with SHAs while uploading to the cloud
+        // keep in sync with release.manifest and asseteditor.html
+        window.MonacoPaths = {
+            "vs/loader": "/pxt-ev3-app/vs/loader.js",
+            "vs/base/worker/workerMain": "/pxt-ev3-app/vs/base/worker/workerMain.js",
+            "vs/basic-languages/bat/bat": "/pxt-ev3-app/vs/basic-languages/bat/bat.js",
+            "vs/basic-languages/cpp/cpp": "/pxt-ev3-app/vs/basic-languages/cpp/cpp.js",
+            "vs/basic-languages/markdown/markdown": "/pxt-ev3-app/vs/basic-languages/markdown/markdown.js",
+            "vs/basic-languages/python/python": "/pxt-ev3-app/vs/basic-languages/python/python.js",
+            "vs/basic-languages/typescript/typescript": "/pxt-ev3-app/vs/basic-languages/typescript/typescript.js",
+            "vs/editor/editor.main.css": "/pxt-ev3-app/vs/editor/editor.main.css",
+            "vs/editor/editor.main": "/pxt-ev3-app/vs/editor/editor.main.js",
+            "vs/editor/editor.main.nls": "/pxt-ev3-app/vs/editor/editor.main.nls.js",
+            "vs/language/json/jsonMode": "/pxt-ev3-app/vs/language/json/jsonMode.js",
+            "vs/language/json/jsonWorker": "/pxt-ev3-app/vs/language/json/jsonWorker.js",
+            "vs/language/typescript/tsMode": "/pxt-ev3-app/vs/language/typescript/tsMode.js",
+            "vs/language/typescript/tsWorker": "/pxt-ev3-app/vs/language/typescript/tsWorker.js",
+            "lzma/lzma_worker-min.js": "/pxt-ev3-app/lzma/lzma_worker-min.js",
+            "smoothie/smoothie_compressed.js": "/pxt-ev3-app/smoothie/smoothie_compressed.js",
+            "pxtblockly.js": "/pxt-ev3-app/pxtblockly.js",
+            "blockly.css": "/pxt-ev3-app/blockly.css",
+            "rtlblockly.css": "/pxt-ev3-app/rtlblockly.css",
+            "gifjs/gif.js": "/pxt-ev3-app/gifjs/gif.js",
+            "qrcode/qrcode.min.js": "/pxt-ev3-app/qrcode/qrcode.min.js",
+            "zip.js/zip.min.js": "/pxt-ev3-app/zip.js/zip.min.js",
+            "pdf-lib/pdf-lib.min.js": "/pxt-ev3-app/pdf-lib/pdf-lib.min.js",
+            "music-editor/apple.png": "/pxt-ev3-app/music-editor/apple.png",
+            "music-editor/burger.png": "/pxt-ev3-app/music-editor/burger.png",
+            "music-editor/cake.png": "/pxt-ev3-app/music-editor/cake.png",
+            "music-editor/car.png": "/pxt-ev3-app/music-editor/car.png",
+            "music-editor/cat.png": "/pxt-ev3-app/music-editor/cat.png",
+            "music-editor/cherry.png": "/pxt-ev3-app/music-editor/cherry.png",
+            "music-editor/clam.png": "/pxt-ev3-app/music-editor/clam.png",
+            "music-editor/computer.png": "/pxt-ev3-app/music-editor/computer.png",
+            "music-editor/crab.png": "/pxt-ev3-app/music-editor/crab.png",
+            "music-editor/dog.png": "/pxt-ev3-app/music-editor/dog.png",
+            "music-editor/duck.png": "/pxt-ev3-app/music-editor/duck.png",
+            "music-editor/egg.png": "/pxt-ev3-app/music-editor/egg.png",
+            "music-editor/explosion.png": "/pxt-ev3-app/music-editor/explosion.png",
+            "music-editor/fish.png": "/pxt-ev3-app/music-editor/fish.png",
+            "music-editor/ice-cream.png": "/pxt-ev3-app/music-editor/ice-cream.png",
+            "music-editor/lemon.png": "/pxt-ev3-app/music-editor/lemon.png",
+            "music-editor/snake.png": "/pxt-ev3-app/music-editor/snake.png",
+            "music-editor/star.png": "/pxt-ev3-app/music-editor/star.png",
+            "music-editor/strawberry.png": "/pxt-ev3-app/music-editor/strawberry.png",
+            "music-editor/taco.png": "/pxt-ev3-app/music-editor/taco.png",
+            "music-editor/bass-clef.svg": "/pxt-ev3-app/music-editor/bass-clef.svg",
+            "music-editor/treble-clef.svg": "/pxt-ev3-app/music-editor/treble-clef.svg",
+        }
+    </script>
+</body>
+
+</html>

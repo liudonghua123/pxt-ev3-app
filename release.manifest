@@ -1,0 +1,75 @@
+CACHE MANIFEST
+
+CACHE:
+/pxt-ev3-app/semantic.js
+/pxt-ev3-app/main.js
+/pxt-ev3-app/pxtapp.js
+/pxt-ev3-app/typescript.js
+/pxt-ev3-app/marked/marked.min.js
+/pxt-ev3-app/highlight.js/highlight.pack.js
+/pxt-ev3-app/jquery.js
+/pxt-ev3-app/pxtlib.js
+/pxt-ev3-app/pxtcompiler.js
+/pxt-ev3-app/pxtpy.js
+/pxt-ev3-app/pxtblockly.js
+/pxt-ev3-app/pxteditor.js
+/pxt-ev3-app/pxtsim.js
+/pxt-ev3-app/pxtembed.js
+/pxt-ev3-app/pxtworker.js
+/pxt-ev3-app/pxtweb.js
+/pxt-ev3-app/blockly.css
+/pxt-ev3-app/semantic.css
+/pxt-ev3-app/rtlsemantic.css
+
+
+/pxt-ev3-app/editor.js
+/pxt-ev3-app/fieldeditors.js
+
+# blockly
+/pxt-ev3-app/blockly/media/sprites.png
+/pxt-ev3-app/blockly/media/click.mp3
+/pxt-ev3-app/blockly/media/disconnect.wav
+/pxt-ev3-app/blockly/media/delete.mp3
+
+# monaco; keep in sync with webapp/public/index.html
+/pxt-ev3-app/vs/loader.js
+/pxt-ev3-app/vs/base/worker/workerMain.js
+/pxt-ev3-app/vs/basic-languages/bat/bat.js
+/pxt-ev3-app/vs/basic-languages/cpp/cpp.js
+/pxt-ev3-app/vs/basic-languages/python/python.js
+/pxt-ev3-app/vs/basic-languages/typescript/typescript.js
+/pxt-ev3-app/vs/basic-languages/markdown/markdown.js
+/pxt-ev3-app/vs/editor/editor.main.css
+/pxt-ev3-app/vs/editor/editor.main.js
+/pxt-ev3-app/vs/editor/editor.main.nls.js
+/pxt-ev3-app/vs/language/json/jsonMode.js
+/pxt-ev3-app/vs/language/json/jsonWorker.js
+/pxt-ev3-app/vs/language/typescript/tsMode.js
+/pxt-ev3-app/vs/language/typescript/tsWorker.js
+
+# charts
+/pxt-ev3-app/smoothie/smoothie_compressed.js
+/pxt-ev3-app/images/Bars_black.gif
+
+# gifjs
+/pxt-ev3-app/gifjs/gif.js
+
+# ai
+/pxt-ev3-app/ai.0.js
+
+/pxt-ev3-app/worker.js
+/pxt-ev3-app/monacoworker.js
+
+# ver Fri Oct 20 2023 00:58:38 GMT+0000 (Coordinated Universal Time)
+
+# target
+/pxt-ev3-app/docs/static/lego_education_logo.png
+/pxt-ev3-app/docs/static/icons/android-chrome-192x192.png
+/pxt-ev3-app/docs/static/Microsoft-logo_rgb_c-gray-square.png
+/pxt-ev3-app/docs/static/Microsoft-logo_rgb_c-gray.png
+/pxt-ev3-app/docs/static/hero.png
+
+/pxt-ev3-app/target.js
+
+NETWORK:
+*
