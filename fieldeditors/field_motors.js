@@ -92,6 +92,7 @@ class FieldMotors extends pxtblockly.FieldImages {
             // Store a data attribute on all possible click targets so we can match it to the icon.
             button.setAttribute('data-value', value);
             buttonImg.setAttribute('data-value', value);
+            buttonImg.style.height = 'auto';
             button.appendChild(buttonImg);
             if (this.addLabel_) {
                 const buttonText = this.createTextNode_(content.alt);
@@ -104,6 +105,8 @@ class FieldMotors extends pxtblockly.FieldImages {
             contentDiv.appendChild(button);
         }
         contentDiv.style.width = this.width_ + 'px';
+        contentDiv.style.display = 'flex';
+        contentDiv.style.alignItems = 'stretch';
         dropdownDiv.appendChild(contentDiv);
         Blockly.DropDownDiv.setColour(sourceBlock.getColour(), sourceBlock.getColourTertiary());
         // Position based on the field position.

@@ -80,9 +80,9 @@
     "uploadDocs": true,
     "versions": {
         "branch": "main",
-        "commits": "https://github.com/liudonghua123/pxt-ev3-app/commits/68fc45e5ccd644452956d009110ac9ac285186de",
-        "target": "1.4.37",
-        "pxt": "9.1.23"
+        "commits": "https://github.com/liudonghua123/pxt-ev3-app/commits/423d43bdef372a10dee031a3fc70bce8f0b5cf52",
+        "target": "1.4.40",
+        "pxt": "9.3.13"
     },
     "blocksprj": {
         "id": "blocksprj",
